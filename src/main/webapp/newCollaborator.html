@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Novo Colaborador</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="assets/mv-icon.png">
+</head>
+<body>
+	<h1>Criar novo colaborador</h1>
+	<h5>Cpf e Comida não podem ser inseridos caso já tenham sido cadastrados.</h5>
+	<form name="frmCollaborator" action="insert">
+		<table>
+			<tr>
+				<td><input type="text" name="contributorName" placeholder="Nome"
+					class="Box1"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="cpf" placeholder="CPF"
+					class="Box2"></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="breakfastFood" placeholder="Comida"
+					class="Box1"></td>
+			</tr>
+		</table>
+		<input type="button" value="Adicionar" class="Button"
+			onclick="validator()">
+	</form>
+	<script src="scripts/validator.js"></script>
+</body>
+</html>
